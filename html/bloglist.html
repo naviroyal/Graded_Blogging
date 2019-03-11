@@ -6,27 +6,103 @@
     <link href='..\css\header.css' rel='stylesheet' type='text/css'>
     <link href='..\css\font.css' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="..\font-awesome-4.7.0/css/font-awesome.min.css">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <style>
+        body{
+            background-color: orange;
+        }
     </style>
 </head>
 <body>
     <div id="main-container-div">
         <div class="header">
-                                
-            <!-- Insert code for Sign Up, Sign In button here. 
-                 Add code for "ScriBBler" heading and the sub-heading -->
-
+            <input class="topButtons" type="button" value="Sign Up" data-toggle="modal" data-target="#exampleModalSignUp" id="sign-up-button">
+            <input class="topButtons" type="button" value="Sign In"  data-toggle="modal" data-target="#exampleModal" id="sign-in-button">
+            <a id="pageTitle" class="logo-title" style="color: blue">ScriBBler</a>
+            <p class="middleText">Explore, Imagine, Create</p>
         </div>
     </div>
     <div>
 
         <!-- Insert code for Sign In modal here -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="col-11 modal-title text-center" id="exampleModalLabel">Welcome Back!</h1>
+                  <button type="button" class="close" style="width:50px;" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" >&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                        <form>
+                                <div class="form-group">
+                                  <label for="exampleInputUsername1">Username</label>
+                                  <input type="text" class="form-control bg-light border-0 rounded-0" id="exampleInputUsername1" aria-describedby="usernameHelp" placeholder="Enter Username" required="true">
+                                </div>
+                                <div class="form-group">
+                                  <label for="exampleInputPassword1">Password</label>
+                                  <input type="password" class="form-control bg-light border-0 rounded-0" id="exampleInputPassword1" placeholder="Enter Password"  required="true">
+                                </div>
+                                <button type="submit" class="btn btn-success rounded-0">Sign In</button>
+                                                   
+                                <p class="text-center mt-4 mb-0 font-weight-bold">
+                            Not a member? <a href="#">Sign Up</a>
+</p>                                
+                        </form>
+                </div>
+                <div class="modal-footer">
+
+                </div>
+              </div>
+            </div>
+          </div>
 
     </div>
 
     <div>
-
+            
         <!-- Insert code for Sign Up modal here -->
+         <div class="modal fade" id="exampleModalSignUp" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="col-11 modal-title text-center" id="exampleModalLabel">Get Started</h1>
+                  <button type="button" class="close btn-sm" data-dismiss="modal" style="width:50px;" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                        <form>
+                                <div class="form-group">
+                                        <label for="exampleInputName1">Full Name</label>
+                                        <input type="text" class="form-control bg-light border-0 rounded-0" id="exampleInputName1" aria-describedby="inputName" placeholder="Enter Full Name"  required="true">
+                                      </div>
+                                <div class="form-group">
+                                  <label for="exampleInputUsername1">Username</label>
+                                  <input type="text" class="form-control bg-light border-0 rounded-0" id="exampleInputUsername1" aria-describedby="usernameHelp" placeholder="Enter Username"  required="true">
+                                </div>
+                                <div class="form-group">
+                                  <label for="exampleInputPassword1">Password</label>
+                                  <input type="password" class="form-control bg-light border-0 rounded-0" id="exampleInputPassword1" placeholder="Enter Password"  required="true">
+                                </div>
+                                <div class="form-group">
+                                        <label for="exampleInputPassword1">Confirm Password</label>
+                                        <input type="password" class="form-control bg-light border-0 rounded-0" id="exampleInputPassword2" placeholder="Confirm Password"  required="true">
+                                      </div>
+                                <button type="submit" class="btn btn-success rounded-0">Sign Up</button>
+                              </form>
+                </div>
+                <div class="modal-footer">
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
 
     </div>
 
@@ -38,11 +114,13 @@
         <div class="post-content">
 
             <!-- Insert code for Trash icon here -->
+            <i class="fa fa-trash trash" style="font-size:28px" aria-hidden="true"></i>
 
             <p class="post-title">Hello there ! This is Post 1. </p>
             <p class="post-desc">Jimi Hendrix was arguably the greatest instrumentalist in the history of rock music.[1] Hendrix expanded the range and vocabulary of the electric guitar into areas no musician had ever ventured before. His boundless drive, technical ability and creative application of such effects as distortion forever transformed the sound of rock and roll. While creating his unique musical voice and guitar style, Hendrix synthesized diverse genres, including blues, R&B, soul, British rock, American folk music, 1950s rock and roll, psychedelic and jazz.</p>
 
             <!-- Insert code for ... icon here -->
+            <i class="fa fa-ellipsis-h post-more elipses" style="font-size:26px;" aria-hidden="true"></i>
 
         </div>
     </div>
@@ -54,11 +132,11 @@
         <div class="post-content">
 
                 <!-- Insert code for Trash icon here -->
-
+                <i class="fa fa-trash trash" style="font-size:28px" aria-hidden="true"></i>
                 <p class="post-title">Hello there ! This is Post 2. </p>
                 <p class="post-desc">Jimi Hendrix was arguably the greatest instrumentalist in the history of rock music.[1] Hendrix expanded the range and vocabulary of the electric guitar into areas no musician had ever ventured before. His boundless drive, technical ability and creative application of such effects as distortion forever transformed the sound of rock and roll. While creating his unique musical voice and guitar style, Hendrix synthesized diverse genres, including blues, R&B, soul, British rock, American folk music, 1950s rock and roll, psychedelic and jazz.</p>
 
-            
+             <i class="fa fa-ellipsis-h post-more elipses" style="font-size:26px;" aria-hidden="true"></i>
             <!-- Insert code for ... icon here -->
         </div>
     </div>
@@ -71,12 +149,12 @@
         <div class="post-content">
 
             <!-- Insert code for Trash icon here -->
-
+                <i class="fa fa-trash trash" style="font-size:28px" aria-hidden="true"></i>
                 <p class="post-title">Hello there ! This is Post 3. </p>
                 <p class="post-desc">Jimi Hendrix was arguably the greatest instrumentalist in the history of rock music.[1] Hendrix expanded the range and vocabulary of the electric guitar into areas no musician had ever ventured before. His boundless drive, technical ability and creative application of such effects as distortion forever transformed the sound of rock and roll. While creating his unique musical voice and guitar style, Hendrix synthesized diverse genres, including blues, R&B, soul, British rock, American folk music, 1950s rock and roll, psychedelic and jazz.</p>
 
             <!-- Insert code for ... icon here -->
-
+                 <i class="fa fa-ellipsis-h post-more elipses" style="font-size:26px;" aria-hidden="true"></i>
         </div>
     </div>
     <div class="post">
@@ -86,12 +164,12 @@
         <div class="post-content">
 
             <!-- Insert code for Trash icon here -->
-
+                <i class="fa fa-trash trash" style="font-size:28px" aria-hidden="true"></i>
                 <p class="post-title">Hello there ! This is Post 4. </p>
                 <p class="post-desc">Jimi Hendrix was arguably the greatest instrumentalist in the history of rock music.[1] Hendrix expanded the range and vocabulary of the electric guitar into areas no musician had ever ventured before. His boundless drive, technical ability and creative application of such effects as distortion forever transformed the sound of rock and roll. While creating his unique musical voice and guitar style, Hendrix synthesized diverse genres, including blues, R&B, soul, British rock, American folk music, 1950s rock and roll, psychedelic and jazz.</p>
 
             <!-- Insert code for ... icon here -->
-
+                 <i class="fa fa-ellipsis-h post-more elipses" style="font-size:26px;" aria-hidden="true"></i>
         </div>
     </div>
     <div class="post">
@@ -99,14 +177,13 @@
                 <p class="post-username">Jimi</p>
             </div>
             <div class="post-content">
-
-                <!-- Insert code for Trash icon here -->
+                    <i class="fa fa-trash trash" style="font-size:28px" aria-hidden="true"></i>
 
                     <p class="post-title">Hello there ! This is Post 5. </p>
                     <p class="post-desc">Jimi Hendrix was arguably the greatest instrumentalist in the history of rock music.[1] Hendrix expanded the range and vocabulary of the electric guitar into areas no musician had ever ventured before. His boundless drive, technical ability and creative application of such effects as distortion forever transformed the sound of rock and roll. While creating his unique musical voice and guitar style, Hendrix synthesized diverse genres, including blues, R&B, soul, British rock, American folk music, 1950s rock and roll, psychedelic and jazz.</p>
                 
                 <!-- Insert code for ... icon here -->
-            
+                     <i class="fa fa-ellipsis-h post-more elipses" style="font-size:26px;" aria-hidden="true"></i>
             </div>
         </div>
 

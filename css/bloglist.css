@@ -1,12 +1,13 @@
 .post {
     position: relative;
-    width: 90%;
+    width: 45%;
     height: 20%;
     background: #fff;
     box-shadow:0 4px 10px 0 rgba(17, 4, 63, 0.2),0 4px 20px 0 rgba(79, 19, 97, 0.19);
     margin: 10px 10px 10px 20px;
     float:left;
     border-radius: 15px;
+    overflow:hidden;
 }
     
 .post-left {
@@ -25,7 +26,8 @@
         background-color: #E8E8E8;
         color: #000000;
         border-radius: 0 15px 15px 0;
-        padding: 0 20px;      
+        padding: 0px 20px;   
+        padding-bottom: 35px;
 }
 .post-title{
     font-family: 'Itim', cursive;
@@ -33,19 +35,34 @@
     color: #2b312b;
     font-size: 25px;
     height: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     }
 .post-more {
     float: right;
     cursor: pointer;
-    font-size: 18px;
-    margin-right: 0 !important;
+    font-size: 28px;
+    margin-right: 10px !important;
     padding-right: 0 !important;
-    padding-bottom: 10px;
-    font-size: 30px;
+    padding-bottom: -10px;
+    font-size: 35px;
+    margin-top: 10px;
 }
 .post-desc{
     height: 100px;
-    margin-bottom: 0 !important;
+    margin-bottom: 0 !important;*/
+     display: block;
+      display: -webkit-box;
+      max-width: 100%;
+    padding-bottom: 56px;
+     height: 50px;*/
+      margin: 0 auto;
+      font-size: 16px;
+      line-height: normal;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
 }
 
 body {
@@ -60,5 +77,9 @@ body {
 .allPostsContainer {
     height: 100%;
     width: 100%;
-
+}
+.trash{
+    float: right;
+    margin-top: 10px;
+    cursor: pointer;
 }
