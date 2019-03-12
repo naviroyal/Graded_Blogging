@@ -1,6 +1,6 @@
 .post {
     position: relative;
-    width: 45%;
+    width: 43%;
     height: 20%;
     background: #fff;
     box-shadow:0 4px 10px 0 rgba(17, 4, 63, 0.2),0 4px 20px 0 rgba(79, 19, 97, 0.19);
@@ -8,6 +8,8 @@
     float:left;
     border-radius: 15px;
     overflow:hidden;
+    margin-right: 50px;
+    margin-left: 13px;
 }
     
 .post-left {
@@ -34,35 +36,40 @@
     font-weight: bold;
     color: #2b312b;
     font-size: 25px;
-    height: 25px;
+    height: 29px;
     margin-top: 20px;
     margin-bottom: 20px;
+    overflow: hidden;
+    
     }
 .post-more {
     float: right;
     cursor: pointer;
     font-size: 28px;
-    margin-right: 10px !important;
+    margin-right: 0 !important;
     padding-right: 0 !important;
     padding-bottom: -10px;
     font-size: 35px;
     margin-top: 10px;
+    margin-bottom: -30px;
 }
 .post-desc{
     height: 100px;
     margin-bottom: 0 !important;*/
+
      display: block;
       display: -webkit-box;
       max-width: 100%;
-    padding-bottom: 56px;
-     height: 50px;*/
+    padding-bottom: 53px;
+     height: 50px;
       margin: 0 auto;
-      font-size: 16px;
+      font-size: 0.95em;
       line-height: normal;
-      -webkit-line-clamp: 3;
+/*      -webkit-line-clamp: 3;*/
       -webkit-box-orient: vertical;
       overflow: hidden;
       text-overflow: ellipsis;
+*/
 }
 
 body {
@@ -77,9 +84,16 @@ body {
 .allPostsContainer {
     height: 100%;
     width: 100%;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 .trash{
     float: right;
     margin-top: 10px;
     cursor: pointer;
+}
+
+.container-center{
+     position:relative;
+     left: 24%;
 }
