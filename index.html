@@ -32,7 +32,7 @@
 
         	<!-- Insert code for All Posts & Create Post button here -->
             <a href="bloglist.html"><input class="post all-post-btn font-weight-bold" type="button" value="All Posts"></a>
-            <input class="post create-post-btn font-weight-bold" type="button" value="Create Post">
+            <input class="post create-post-btn font-weight-bold" type="button" value="Create Post" data-toggle="modal" data-target="#exampleModalcreate" data-whatever="">
             
 
         </div>
@@ -114,11 +114,38 @@
           </div>
 
 
-    <div>
+    
 
     	<!-- Insert code for Create Post modal here -->
-
+        <div class="modal fade" id="exampleModalcreate" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="col-11 modal-title text-center" id="exampleModalLabel">Create Post</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"  style="width:50px;">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Enter Title</label>
+            <input type="text" class="form-control" id="recipient-name" placeholder="Enter Title">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="col-form-label">Write</label>
+            <textarea class="form-control" id="message-text" placeholder="Enter your details.."></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+          <button type="button" class="btn col-2">Create</button>
+          <button type="button" class="btn btn-danger col-2" data-dismiss="modal">Close</button>
+      </div>
     </div>
+  </div>
+</div>
+        
 
 	<!-- Place all Javascript for header in this file -->
 	<script src="js\header.js"></script>
