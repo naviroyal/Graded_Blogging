@@ -6,7 +6,7 @@ var saveIcon = document.getElementById("saveIcon");
 var editableParagraph = document.getElementById("blogBody");
 var commentTemplate = document.getElementById("addComment");
 var commentText = "";
-
+var commentText1 = "";
 function likeFunction(){
     noOFLikes++;
     if(noOFLikes==1){
@@ -40,7 +40,8 @@ function addComments(id){
     }
     else{
     commentText = id.value +'<br>';
-    commentTemplate.innerHTML += "<p class='p4'>"+commentText+"</p>";
+        commentText1=commentTemplate.innerHTML;
+    commentTemplate.innerHTML = "<p class='p4'>"+commentText+"</p>"+commentText1;
     id.value = id.defaultValue;
     }
 }
